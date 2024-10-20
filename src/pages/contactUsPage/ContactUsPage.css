@@ -1,0 +1,130 @@
+.contact-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  margin-top: -6rem;
+  margin-inline: 3rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  z-index: 2;
+}
+
+.contact-information {
+  box-shadow: 1px 1px 4px #4e4e4e;
+  padding: 1.5rem;
+  padding-inline: 2.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 150ms ease-in;
+
+  &:is(:hover) {
+    background-color: #51e995fb;
+
+    h4 {
+      color: var(--main-color-dark);
+    }
+  }
+}
+
+.contact-information h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--fourth-color);
+  text-shadow: 1px 0px 0px #00000050;
+}
+
+.contact-information .box .icon-wrapper {
+  display: flex;
+  background-color: var(--main-color);
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 100%;
+  color: #fff;
+}
+.contact-information .box {
+  margin-block: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contanct-link {
+  color: var(--main-color);
+  margin-left: 12px;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  strong {
+    margin-left: -12px;
+    color: #000;
+  }
+}
+
+.contact-information p {
+  margin-bottom: 5px;
+}
+
+.alarm {
+  color: rgb(255, 44, 44);
+}
+
+.map-wrapper {
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  &:hover {
+    background-color: rgba(120, 184, 196, 0.712);
+  }
+}
+
+.map-heading {
+  margin-bottom: 1rem;
+}
+.map-iframe-box {
+  width: 100%;
+  height: 28rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-info-container {
+    margin-top: -4rem;
+    margin-inline: 1rem;
+    padding: 1.3rem;
+    grid-template-columns: 1fr;
+
+    .contact-information {
+      box-shadow: 1px 1px 4px #3b3b3b;
+      padding-block: 1.2rem;
+      padding-inline: 1.8rem;
+      border-radius: 5px;
+      background-color: #fff;
+
+      &:is(:hover) {
+        background-color: #51e995fb;
+
+        h4 {
+          color: var(--main-color-dark);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .map-wrapper {
+    padding: 1rem;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .contact-information {
+    padding-inline: 1.5rem;
+  }
+}

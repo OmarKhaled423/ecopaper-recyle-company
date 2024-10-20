@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+    border: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    min-height: 450px;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 1px 1px 7px 0px #414141;
+}
+
+.error_code {
+    font-size: 9rem;
+    color: #be4949;
+    letter-spacing: 10px;
+    font-weight: 500;
+    text-shadow: 0px 0px 0 rgb(193, 71, 71), -1px 0px 0 rgb(179, 57, 57), -2px 0px 0 rgb(165, 43, 43), -3px 0px 0 rgb(151, 29, 29), -4px 0px 0 rgb(137, 15, 15), -5px 0px 0 rgb(123, 1, 1), -6px 0px 0 rgb(110, -12, -12), -7px 0px 0 rgb(96, -26, -26), -8px 0px 0 rgb(82, -40, -40), -9px 0px 0 rgb(68, -54, -54), -10px 0px 0 rgb(54, -68, -68), -11px 0px 0 rgb(40, -82, -82), -12px 0px 0 rgb(26, -96, -96), -13px 0px 0 rgb(12, -110, -110), -14px 0px 0 rgb(-2, -124, -124), -15px 0px 14px rgba(0, 0, 0, 0.4), -15px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 14px rgba(0, 0, 0, .2);
+}
+.error_caption {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hr {
+    background-color: rgb(204, 196, 196);
+    height: 2px;
+    width: 60%;
+    margin-block: 5px;
+
+}
+
+.error_paragraph {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+.btn {
+    color: #ffffff;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-shadow: 1px 0px 1px #353535;
+    font-family: inherit;
+    border: none;
+    background-color: #181717;
+    margin-inline: 1rem;
+
+    &:is(:focus, :hover) {
+        box-shadow: 1px 1px 3px 1px #000000;
+        background-color: #01566b;
+    }
+}

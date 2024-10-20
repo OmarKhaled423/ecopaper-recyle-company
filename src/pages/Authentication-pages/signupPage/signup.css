@@ -1,0 +1,122 @@
+.container {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #9db9b9;
+  align-content: canter;
+  padding-block: 2rem;
+}
+
+.card {
+  min-width: 20%;
+  margin-inline: auto;
+  background-color: aliceblue;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 3px #1f1e1e69;
+  text-align: center;
+
+}
+/* .card__content{
+   width: 100%;
+} */
+  /* .page-heading {
+    margin-bottom: 1.2rem; 
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--fourth-color);
+  } */
+
+.signup-from {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      font-weight: 500;
+      user-select: none;
+    }
+    .input-field__wrapper {
+      background-color: rgb(226, 226, 226);
+      padding: 0.5rem 0.8rem;
+      margin-block: 3px;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        font-family: inherit;
+        font-size: 1rem;
+      }
+
+      .showHide__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        padding: 10px;
+        background-color: burlywood;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        cursor: pointer;
+
+      }
+
+      &:is(:focus-within) {
+        outline: 1px solid var(--fourth-color);
+      }
+    }
+
+    .btn {
+      background-color: var(--fourth-color);
+      padding-block: 0.5rem;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 500;
+      user-select: none;
+      margin-top: 0.5rem;
+      cursor: pointer;
+      opacity: 1;
+      outline: none;
+    }
+
+
+    /* @keyframes elasticity {
+      0%,
+      100% {
+        transform: scaleX(1);
+      }
+      50% {
+        transform: scaleX(0.7);
+      }
+    } */
+  }
+  .links {
+    padding-block: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .forgot-password {
+    text-align: right;
+    font-weight: 400;
+    color: var(--fourth-color) !important;
+    color: rgba(47, 130, 255, 0);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
