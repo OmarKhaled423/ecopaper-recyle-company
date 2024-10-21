@@ -185,7 +185,7 @@ const AppHeader = () => {
                 onClick={() => setOpenNav(!openNav)}
                 className={({ isActive }) =>
                   isActive
-                    ? "isActive dropdown-manu__item"
+                    ? "isActiveDropdown dropdown-manu__item"
                     : "inActiveDropdown dropdown-manu__item"
                 }
                 to="/tissues-papers"
@@ -219,19 +219,6 @@ const AppHeader = () => {
             <span className="nav-text">About Us</span>
           </NavLink>
 
-          {/*
-          <NavLink onClick={()=>(setOpenNav(!openNav))}
-            className={({ isActive }) =>
-              isActive
-            ? "active-item header__nav-item"
-            : "none-color header__nav-item"
-            }
-            to="/events"
-            >
-            <span className="nav-text">Events</span>
-            </NavLink> 
-           
-            */}
         </nav>
       </header>
     </>
