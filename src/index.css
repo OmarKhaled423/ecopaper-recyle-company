@@ -206,6 +206,7 @@ button {
 @media only screen and (max-width: 425px) {
   .products-card__wrapper {
     padding: 0rem;
+    padding-block: 1rem;
     justify-content: center;
   }
   .hero-section {
