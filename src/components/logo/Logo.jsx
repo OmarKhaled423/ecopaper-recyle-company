@@ -1,6 +1,6 @@
 import React from "react";
-import WebsiteLogo from "../../assets/httc-logo.jpeg";
-import styles from './Logo.module.css';
+import WebsiteLogo from "/httc-logo.jpeg";
+import styles from "./Logo.module.css";
 
 const Logo = () => {
   return (
@@ -13,12 +13,11 @@ const Logo = () => {
           title="website logo"
         />
       </div>
-      <div className={styles.logo__title_wrapper} title="Ecopaper Recycle Company">
-        <h1
-          className={styles.logo__title_text}
-        >
-          Ecopaper Recycle Company
-        </h1>
+      <div
+        className={styles.logo__title_wrapper}
+        title="Ecopaper Recycle Company"
+      >
+        <h1 className={styles.logo__title_text}>Ecopaper Recycle Company</h1>
         <p className={styles.logo__sub_describtion}>A Paper Tading Company.</p>
       </div>
     </div>

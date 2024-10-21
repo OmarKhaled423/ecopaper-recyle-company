@@ -1,5 +1,3 @@
-// import Marquee from "../../components/Marquee/Marquee";
-// import AppHeader from "../../components/header/AppHeader";
 import { Link } from "react-router-dom";
 import styleSheet from "./NotFoundPage.module.css";
 

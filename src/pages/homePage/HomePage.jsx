@@ -1,7 +1,4 @@
-import AppHeader from "../../components/header/AppHeader";
-import AppFooter from "../../components/footer/AppFooter";
 import { Link } from "react-router-dom";
-
 import "./HomePage.css";
 
 import SliderCustom from "../../components/slider/Slider";
